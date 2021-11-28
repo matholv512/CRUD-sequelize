@@ -1,0 +1,15 @@
+const path = require('path');
+
+module.exports = {
+    'config': path.resolve(__dirname, 'src', 'config', 'database.js'),
+    'migrations-path': path.resolve(__dirname, 'src', 'database', 'migrations'),
+};
+
+//npx sequelize db:create       #Para criar o banco de dados
+//npx sequelize migration:create --name=create-users     #Para criar tabela
+//npx sequelize-cli db:migrate  #Para criar a tabela no bd sql
+//npx sequelize-clidb:migrate #criar tabelas
+//npx sequelize-cli db:migrate:undo #remover
+
+
+ 
